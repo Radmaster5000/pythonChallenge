@@ -1224,4 +1224,18 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 }!)$]&($)@](+(#{$)_%^%_^^#][{*[)%}+[##(##^{$}^]#&(&*{)%)&][&{]&#]}[[^^&[!#}${@_(
 #@}&$[[%]_&$+)$!%{(}$^$}* """
 
+# initialise an empty dictionary
+dict = {}
+
+# check each char in the string
+# if it's in the dictionary, increase the key's value by one
+# if it's not, add the key to the dictionary
+
+for i in string:
+	if i in dict:
+		dict[i] += 1
+	else:
+		dict.update({i : 0})
+
+print(dict)
 
