@@ -1,3 +1,5 @@
+import re
+
 string = """
 kAewtloYgcFQaJNhHVGxXDiQmzjfcpYbzxlWrVcqsmUbCunkfxZWDZjUZMiGqhRRiUvGmYmvnJIHEmbT
 MUKLECKdCthezSYBpIElRnZugFAxDRtQPpyeCBgBfaRVvvguRXLvkAdLOeCKxsDUvBBCwdpMMWmuELeG
@@ -1265,5 +1267,10 @@ for i in string:
 				print(i, end='')
 
 	n += 1
+
+#x = re.findall("[^A-Z][A-Z]{3}[a-z][A-Z]{3}[^A-Z]", string)
+#print(x)
+
+
 
 
